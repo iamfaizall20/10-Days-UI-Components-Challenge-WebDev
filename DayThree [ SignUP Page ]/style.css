@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background: #b6b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    background: cornflowerblue;
+    border-radius: 20px;
+}
+
+.left_prt {
+    height: 100%;
+    width: 40%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.left_prt h1 {
+    font-size: 42px;
+    letter-spacing: 0.7px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.left_prt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.left_prt button {
+    border: 1px solid black;
+    background: none;
+    padding: 12px 70px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.right_prt {
+    height: 100%;
+    width: 60%;
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    text-align: center;
+    padding: 30px 120px;
+    background: #fff;
+}
+
+.right_prt h1 {
+    margin-top: 25px;
+    margin-bottom: 60px;
+    color: navy;
+}
+
+.right_prt .inputs {
+    display: grid;
+    place-items: center;
+}
+
+input[type="text"],
+input[type="Password"] {
+    width: 350px;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.right_prt button {
+    border: none;
+    padding: 12px 33px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.right_prt h2 {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.right_prt i {
+    background: #ededed;
+    padding: 10px;
+    color: navy;
+    font-size: 20px;
+    margin: 0 6px;
+}
+
+.right_prt p {
+    margin-top: 30px;
+}
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+Responsive Design
+@media (max-width: 1200px) {
+    #frame {
+        width: 80%;
+    }
+
+    .right_prt {
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    #frame {
+        width: 90%;
+    }
+
+    .left_prt h1 {
+        font-size: 36px;
+        margin-top: 80px;
+    }
+
+    .left_prt p {
+        font-size: 16px;
+    }
+
+    .right_prt {
+        padding: 30px 50px;
+    }
+
+    input[type="text"],
+    input[type="Password"] {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #frame {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .left_prt,
+    .right_prt {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .left_prt h1 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .left_prt p {
+        font-size: 14px;
+    }
+
+    .left_prt button {
+        padding: 10px 50px;
+        font-size: 16px;
+    }
+
+    .right_prt {
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .right_prt h1 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="Password"] {
+        width: 100%;
+    }
+
+    .right_prt button {
+        padding: 10px 25px;
+    }
+
+    .right_prt h2 {
+        font-size: 14px;
+    }
+
+    .right_prt i {
+        font-size: 18px;
+    }
+
+    .right_prt p {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #frame {
+        width: 96%;
+    }
+    .left_prt{
+        padding:0;
+        padding-bottom: 15px;
+    }
+    .left_prt h1 {
+        font-size: 36px;
+    }
+
+    .left_prt p {
+        font-size: 16px;
+    }
+
+    .left_prt button {
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+
+    .right_prt {
+        padding: 20px;
+    }
+
+    .right_prt h1 {
+        font-size: 24px;
+    }
+
+    .right_prt button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .right_prt h2 {
+        font-size: 12px;
+    }
+
+    .right_prt i {
+        font-size: 18px;
+    }
+
+    .right_prt p {
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
