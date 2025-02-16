@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+footer{
+    min-width: 100vw;
+    /* height: 350px; */
+    background: #2C3930;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+}
+.footer-container{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-col ul{
+    margin-top: 15px;
+}
+.footer-col ul li{
+    list-style: none;
+}
+.footer-col ul a{
+    color: #f0f0f0;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer-col ul a:hover{
+    border-bottom: 2px solid blueviolet;
+}
+.social-list{
+    display: flex;
+    gap: 20px;
+}
+.social-list i{
+    font-size: 20px;
+}
+
+@media screen and (max-width:930px) {
+    .footer-container{
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col ul{
+        margin: 2px 0px 25px;
+    }
+}
